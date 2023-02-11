@@ -1,5 +1,5 @@
-# Name:    MelissaDataPhoneObjectWindowsPython3Sample
-# Purpose: Use the Melissa Updater to make the MelissaDataPhoneObjectWindowsPython3 sample usable
+# Name:    MelissaPhoneObjectWindowsPython3
+# Purpose: Use the Melissa Updater to make the MelissaPhoneObjectWindowsPython3 code usable
 
 
 ######################### Parameters ##########################
@@ -26,7 +26,7 @@ $ProductName = "DQ_PHONE_DATA"
 # Modify this if you want to use 
 $CurrentPath = $PSScriptRoot
 Set-Location $CurrentPath
-$ProjectPath = "$CurrentPath\MelissaDataPhoneObjectWindowsPython3Sample"
+$ProjectPath = "$CurrentPath\MelissaPhoneObjectWindowsPython3"
 $DataPath = "$ProjectPath\Data"
 
 If (!(Test-Path $DataPath)) {
@@ -111,7 +111,7 @@ function CheckDLLs() {
 
 ########################## Main ############################
 
-Write-Host "`n=============== Sample of Melissa Data Phone Object ================`n                    [ Python3 | Windows | 64BIT ]`n"
+Write-Host "`n======================= Melissa Phone Object =======================`n                    [ Python3 | Windows | 64BIT ]`n"
 
 # Get license (either from parameters or user input)
 if ([string]::IsNullOrEmpty($license) ) {
@@ -147,14 +147,11 @@ if (!$DLLsAreDownloaded) {
 
 Write-Host "All file(s) have been downloaded/updated! "
 
-# Start sample
-# Build project
-Write-Host "`n=========================== BUILD PROJECT =========================="
-
+# Start
 # Run project
 if ([string]::IsNullOrEmpty($phone)) {
-  python3 MelissaDataPhoneObjectWindowsPython3Sample/MelissaDataPhoneObjectWindowsPython3Sample.py --license $License  --dataPath $DataPath
+  python3 MelissaPhoneObjectWindowsPython3/MelissaPhoneObjectWindowsPython3.py --license $License  --dataPath $DataPath
 }
 else {
-  python3 MelissaDataPhoneObjectWindowsPython3Sample/MelissaDataPhoneObjectWindowsPython3Sample.py --license $License  --dataPath $DataPath --phone $phone
+  python3 MelissaPhoneObjectWindowsPython3/MelissaPhoneObjectWindowsPython3.py --license $License  --dataPath $DataPath --phone $phone
 }
