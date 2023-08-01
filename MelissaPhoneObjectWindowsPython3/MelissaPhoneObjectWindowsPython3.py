@@ -93,7 +93,7 @@ def run_as_console(license, test_phone, data_path):
 
         """ Print user input """
         print("\n============================== INPUTS ==============================\n")
-        print(f"\t               Phone: {phone}")
+        print(f"\t                Phone: {phone}")
 
         """ Execute Phone Object """
         data_container = phone_object.execute_object_and_result_codes(data)

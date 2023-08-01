@@ -2,5 +2,6 @@ __pycache__/
 Data/
 mdPhone.dll
 mdPhone.dll.hash
+*.hash
 MelissaUpdater
 # mdPhone_pythoncode.py
