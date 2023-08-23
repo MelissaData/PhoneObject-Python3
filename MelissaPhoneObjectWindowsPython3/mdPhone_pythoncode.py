@@ -203,7 +203,7 @@ class mdPhone(object):
 	def GetDatabaseDate(self):
 		return lib.mdPhoneGetDatabaseDate(self.I).decode('utf-8')
 
-	def Lookup(self, phone, zip="0"):
+	def Lookup(self, phone, zip=""):
 		return lib.mdPhoneLookup(self.I, phone.encode('utf-8'), zip.encode('utf-8'))
 
 	def CorrectAreaCode(self, phone, zip):
@@ -350,7 +350,7 @@ class mdGlobalPhone(object):
 	def GetDatabaseDate(self):
 		return lib.mdGlobalPhoneGetDatabaseDate(self.I).decode('utf-8')
 
-	def Lookup(self, phone, country="0", origcountry="0"):
+	def Lookup(self, phone, country="", origcountry=""):
 		return lib.mdGlobalPhoneLookup(self.I, phone.encode('utf-8'), country.encode('utf-8'), origcountry.encode('utf-8'))
 
 	def LookupNext(self):
