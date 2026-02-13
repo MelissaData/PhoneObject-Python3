@@ -5,7 +5,7 @@ This code showcases the Melissa Phone Object using Python3
 
 Please feel free to copy or embed this code to your own project. Happy coding!
 
-For the latest Melissa Phone Object release notes, please visit: https://releasenotes.melissa.com/on-premise-api/phone-object/
+To view the latest Melissa Phone Object release notes or to subscribe to product notifications, please visit: https://releasenotes.melissa.com/on-premise-api/phone-object/
 
 For further details, please visit: https://docs.melissa.com/on-premise-api/phone-object/phone-object-quickstart.html
 
@@ -26,8 +26,8 @@ And return
 - Result Codes
 
 ## Tested Environments
-- Windows 10 64-bit Python 3.8.7, Powershell 5.1
-- Melissa data files for 2026-01
+- Windows 11 64-bit Python 3.8.7, Powershell 5.1
+- Melissa data files for 2026-02
 
 ## Required File(s) and Programs
 
@@ -84,8 +84,8 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-git clone https://github.com/MelissaData/PhoneObject-Python3
-cd PhoneObject-Python3
+git clone https://git.melissadata.com/dtgroup/melissadataobjectexamples/python3/melissadataphoneobjectwindowspython3sample
+cd MelissaPhoneObjectWindowsPython3
 ```
 
 #### Set up Melissa Updater 
