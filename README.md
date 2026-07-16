@@ -84,8 +84,8 @@ The console will then prompt you with the following warning shown in the image b
 
 #### Download this project
 ```
-git clone https://git.melissadata.com/dtgroup/melissadataobjectexamples/python3/melissadataphoneobjectwindowspython3sample
-cd MelissaPhoneObjectWindowsPython3
+git clone https://github.com/MelissaData/PhoneObject-Python3
+cd PhoneObject-Python3
 ```
 
 #### Set up Melissa Updater 
